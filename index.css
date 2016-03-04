@@ -1,0 +1,15 @@
+header{
+    padding:100px 0;
+    background-image: url("image/sakura.jpg");
+    background-size:cover;
+}
+
+#image--face{
+    border-radius: 100%;
+    border:10px solid #DDD;
+}
+
+footer{
+    padding:20px 0;
+    background-color:#DDD;
+}
