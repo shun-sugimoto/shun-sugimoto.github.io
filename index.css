@@ -9,7 +9,6 @@ header{
     border:10px solid #DDD;
 }
 
-footer{
-    padding:20px 0;
-    background-color:#DDD;
+.panel-heading--width{
+    height:60px;
 }
