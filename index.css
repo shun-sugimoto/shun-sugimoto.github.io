@@ -1,7 +1,11 @@
-header{
+.portfolio-header{
     padding:100px 0;
     background-image: url("image/sakura.jpg");
     background-size:cover;
+}
+
+.portfolio-header--xs{
+    padding:20px 0;
 }
 
 #image--face{
