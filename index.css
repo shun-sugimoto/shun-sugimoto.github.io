@@ -8,7 +8,7 @@
     padding:20px 0;
 }
 
-#image--face{
+.image--face{
     border-radius: 100%;
     border:10px solid #DDD;
 }
