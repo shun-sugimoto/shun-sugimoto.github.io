@@ -1,0 +1,127 @@
+body {
+    font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+    color: #444444;
+    margin: 0;
+}
+
+header {
+    background-image: url("images/top.jpg");
+    background-size: cover;
+    height: 150px;
+    font-size: 2em;
+}
+
+header:after {
+    border: 1px solid #000;
+}
+
+#detail {
+    padding-top: 20px;
+    width: 1200px;
+    margin: auto;
+}
+
+article {
+    border: 1px solid #dddddd;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 800px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section > h2 {
+    padding-left: 5px;
+    border-left: 5px solid green;
+    border-bottom: 1px solid green;
+}
+
+#profile_image {
+    background-color: darkgray;
+    width: 400px;
+    height: 300px;
+    float: left;
+    display: table;
+    text-align: center;
+}
+
+#profile_image div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#profile_main {
+    float: right;
+}
+
+.profile table {
+    border: 1px solid #ccc;
+}
+
+.profile table th {
+    width: 25%;
+    padding: 4px;
+    text-align: left;
+    color: #444;
+    border-left: 3px double #999;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile table td {
+    width: 75%;
+    padding: 4px;
+    background-color: #fafafa;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile_main table {
+    float: right;
+}
+
+.profile_main th {
+    background-color: yellowgreen;
+}
+
+.profile_sub {
+    margin-top: 20px;
+}
+.profile_sub  table{
+    width:100%;
+}
+
+.profile_sub th {
+    background-color: skyblue;
+}
+
+nav {
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+nav h2 {
+    background-color: #dddddd;
+}
+
+.clearfix {
+    clear: both;
+}
+
+footer {
+    border-top:1px solid #AAA;
+    text-align: center;
+    background-color:#f2f2f2;
+    background-size: cover;
+}
+
+#footer_logo{
+    margin-top: 10px;
+}
