@@ -18,10 +18,14 @@ body {
 }
 
 #detail {
-    width: 600px;
     display: table-cell;
-    text-align: center;
     vertical-align: middle;
+    text-align: center;
+}
+
+#detail_innner {
+    margin: auto;
+    width: 600px;
 }
 
 header {
