@@ -1,6 +1,7 @@
 var map;
 
 function initMap() {
+    "use strict";
     map = new google.maps.Map(document.getElementById('map'), {
         center: {
             lat: -34.397,
