@@ -5,36 +5,15 @@
     <meta charset="UTF-8">
     <title>2016年夏インターン自己紹介</title>
     <link rel="stylesheet" href="main.css">
-    <style type="text/css">
-
-        #googlemap {
-            height: 200px;
-            margin: 0;
-            padding: 0;
-        }
-        
-        #map {
-            height: 100%;
-        }
-    </style>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzYEg6pavhKzWMaeaZE6MosXP5rLIk0Ds&callback=initMap">
+    </script>
+    <script type="text/javascript" src="googlemap.js"></script>
 </head>
 
 <body>
     <script type="text/javascript">
-        var map;
+    </script>
 
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: {
-                    lat: -34.397,
-                    lng: 150.644
-                },
-                zoom: 8
-            });
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=	AIzaSyAzYEg6pavhKzWMaeaZE6MosXP5rLIk0Ds&callback=initMap">
-    </script>
     <header>
         ここからはじまる!2016年夏インターン自己紹介
     </header>
@@ -92,18 +71,19 @@
                 </div>
             </section>
 
-            <section id="googlemap">
+            <section>
                 <h2>生息地</h2>
-                <div id="map"></div>
+                <div id="googlemap">
+                    <div id="map"></div>
+                </div>
             </section>
-
+            
             <section>
                 <h2>Bracketsエディターの使い方</h2>
                 <li>
                     <ul><a href="http://qiita.com/koh-taka@github/items/3c646d701dfad7b6b0bd">Bracketsのプラグイン</a></ul>
                 </li>
             </section>
-
 
 
             <section>
@@ -121,8 +101,8 @@
                     <li><a href="https://syncer.jp/google-maps-javascript-api-matome">Google Maps JavaScript API v3の使い方まとめ (サンプルコード付き)</a>
                     </li>
                     <li><a href="https://developers.google.com/maps/documentation/javascript/?hl=ja">公式サイト</a></li>
-                    <li><a href="https://developers.google.com/maps/documentation/javascript/tutorial?hl=ja">公式リファレンス</a>
-http://qiita.com/akippiko/items/a4c539934fa4df2fd5b5
+                    <li><a href="https://developers.google.com/maps/documentation/javascript/tutorial?hl=ja">公式リファレンス</a> 
+                    <li><a href="http://qiita.com/akippiko/items/a4c539934fa4df2fd5b5">google mapが表示されない</a></li>
                     </li>
                 </ul>
             </section>
@@ -146,11 +126,11 @@ http://qiita.com/akippiko/items/a4c539934fa4df2fd5b5
                 <li>E</li>
                 <li>F</li>
                 <li>G</li>
-
             </ul>
         </nav>
     </div>
     <div class="clearfix"></div>
+
     <footer>
         <div id="footer_logo"><img src="images/logo.jpg" alt="会社ロゴ"></div>
         <span>&copy;shun sugimoto</span>
