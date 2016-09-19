@@ -16,29 +16,76 @@ body {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     color: aliceblue;
     margin: 0;
+    border-bottom: 1px solid #000;
+}
+
+article {
+    margin: 50px 0 50px 0;
 }
 
 header a {
+    font-size: 2rem;
     text-decoration: none;
     color: white;
 }
 
+h2 {
+    width: 75%;
+    margin: 15px auto;
+    padding-left: 20px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+    color: #000;
+    text-shadow: 2px 2px 1px #FFF, -2px 2px 1px #FFF, 2px -2px 1px #FFF, -2px -2px 1px #FFF;
+}
+
 .profiles_panel {
-    margin: 30px auto;
-    width: 50%;
+    margin: 15px auto 50px auto;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .profile_panel {
-    background-color: white;
-    border: 1px solid #444;
-    margin: 30px;
-    width: 100px;
-    height: 50px;
+    border-radius: 50%;
+    border: 7px double #444;
+    background-image: url("../../iamges/profile/300x200.png");
+    background-position: center;
+    margin: 40px;
+    width: 140px;
+    height: 140px;
     display: inline-flex;
     justify-content: space-around;
+}
+
+.profile_panel a {
+    text-decoration: none;
+    color: white;
+}
+
+.profile_panel_filter {
+    text-align: center;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    display: table;
+}
+
+.profile_panel_filter span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.profile_panel_filter:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-top: 1px solid #000;
+    height: 50px;
+    text-align: center;
 }
