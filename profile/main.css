@@ -49,6 +49,16 @@ section > h2 {
     text-align: center;
 }
 
+#googlemap {
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100%;
+}
+
 #profile_image div {
     display: table-cell;
     vertical-align: middle;
@@ -92,8 +102,9 @@ section > h2 {
 .profile_sub {
     margin-top: 20px;
 }
-.profile_sub  table{
-    width:100%;
+
+.profile_sub table {
+    width: 100%;
 }
 
 .profile_sub th {
@@ -116,12 +127,12 @@ nav h2 {
 }
 
 footer {
-    border-top:1px solid #AAA;
+    border-top: 1px solid #AAA;
     text-align: center;
-    background-color:#f2f2f2;
+    background-color: #f2f2f2;
     background-size: cover;
 }
 
-#footer_logo{
+#footer_logo {
     margin-top: 10px;
 }
