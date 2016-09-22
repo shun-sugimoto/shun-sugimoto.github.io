@@ -17,33 +17,68 @@ body {
 
 header {
     background-color: rgba(0, 0, 0, 0.3);
-    color: aliceblue;
     margin: 0;
     border-bottom: 1px solid #000;
-}
-
-article {
-    margin: 50px 0 50px 0;
+    display: flex;
 }
 
 header a {
-    font-size: 2rem;
     text-decoration: none;
     color: white;
 }
 
-h2 {
-    width: 75%;
-    margin: 15px auto;
-    padding-left: 20px;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+.header_left_item {
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+.header_right_item {
+    margin: 5px;
+    padding-right: 5px;
+    border-right: 1px solid #fff;
+    display: table;
+}
+
+.header_right_item a {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header_right_item__last {
+    border-right: none;
+}
+
+h1 {
+    margin: 0;
     color: #000;
     text-shadow: 2px 2px 1px #FFF, -2px 2px 1px #FFF, 2px -2px 1px #FFF, -2px -2px 1px #FFF;
 }
 
-.profiles_panel {
-    margin: 15px auto 50px auto;
+.svg_layout {
+    padding-right: 10px;
+}
+
+#main {
+    background-color: rgba(255, 255, 255, 0.5);
     width: 75%;
+    margin: 30px auto;
+}
+
+#main >h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.profiels_container > h1 {
+    padding-left: 3px;
+    margin: 0 30px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.profiles_panel {
+    width: 75%;
+    margin: auto;
+    padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -76,6 +111,7 @@ h2 {
 .profile_panel_filter span {
     display: table-cell;
     vertical-align: middle;
+    width: 100%;
 }
 
 .profile_panel_filter:hover {
