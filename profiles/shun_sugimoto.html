@@ -7,89 +7,75 @@
     <link rel="stylesheet" href="../static/css/common.css">
     <link rel="stylesheet" href="../static/css/layout/profile_common.css">
     <link rel="stylesheet" href="../static/css/layout/shun_sugimoto.css">
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzYEg6pavhKzWMaeaZE6MosXP5rLIk0Ds&callback=initMap">
-    </script>
-    <script type="text/javascript" src="../js/profiles/shun_sugimoto/googlemap.js"></script>
 </head>
 
 <body>
-    <a href="../index.html" id="header">
-        <header>ここからはじまる!2016年夏インターン自己紹介</header>
-    </a>
+    <header>
+        <div class="header_left_item"><a href="../index.html">ここからはじまる!夏インターン</a></div>
+        <div class="header_right_item"><a href="./index.html">メンバー紹介</a></div>
+        <div class="header_right_item"><a href="">HTML</a></div>
+        <div class="header_right_item"><a href="">CSS</a></div>
+        <div class="header_right_item header_right_item__last"><a href="">Googlemap</a></div>
+    </header>
 
-    <div id="detail">
-        <article>
-            <section class="abount_me">
-                <h2>プロフィール</h2>
-                <div id="profile_image">
-                    <div>
-                        <img src="../static/iamges/profile/300x200.png" alt="顔写真">
+    <h1>杉本隼</h1>
+    <section>
+        <h1>プロフィール</h1>
+        <div id="profile_image">
+            <div>
+                <img src="../static/iamges/profile/300x200.png" alt="顔写真">
+            </div>
+        </div>
+        <section>
+            <h1>所属・体格</h1>
+            <table>
+                <tr>
+                    <th>所属</th>
+                    <td>コンシューマアプリ開発部</td>
+                </tr>
+                <tr>
+                    <th>身長</th>
+                    <td>175cm</td>
+                </tr>
+                <tr>
+                    <th>体重</th>
+                    <td>わけあって教えることができません</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h1>好きなこと・趣味</h1>
+            <ol>
+                <li>徹夜からの睡眠</li>
+                <li>アニメ</li>
+                <li>ソシャゲ</li>
+                <li><a href="http://nlab.itmedia.co.jp/">ねとらぼ</a></li>
+            </ol>
+        </section>
+        <section>
+            <h1>嫌いなこと</h1>
+            <ol>
+                <li>徹夜明けの頭痛</li>
+                <li>文章を書くこと</li>
+                <li>同じ間違えを繰り返した時の絶望感</li>
+            </ol>
+        </section>
+    </section>
 
-                    </div>
-                </div>
-                <div class="profile profile_main">
-                    <table>
-                        <tr>
-                            <th>名前</th>
-                            <td>杉本隼</td>
-                        </tr>
-                        <tr>
-                            <th>所属</th>
-                            <td>コンシューマアプリ開発部</td>
-                        </tr>
-                        <tr>
-                            <th rowspan=3>好きなこと</th>
-                            <td>徹夜からの睡眠</td>
-                        </tr>
-                        <tr>
-                            <td>ソシャゲ,アニメ</td>
-                        </tr>
-                        <tr>
-                            <td><a href="http://nlab.itmedia.co.jp/">ねとらぼ</a>を読むこと</td>
-                        </tr>
-                        <tr>
-                            <th rowspan=2>嫌いなこと</th>
-                            <td>文章を書くこと</td>
-                        </tr>
-                        <tr>
-                            <td>同じ間違えを繰り返した時の絶望感</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="clearfix"></div>
-                <div class="profile profile_sub">
-                    <table>
-                        <tr>
-                            <th>座右の銘</th>
-                            <td>俺は俺</td>
-                        </tr>
-                        <tr>
-                            <th>死ぬ前に一度は
-                                <br>やってみたいこと</th>
-                            <td>合コン</td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
-
-            <section>
-                <h2>所在地近辺の紹介</h2>
-                <div id="googlemap">
-                    <div id="map"></div>
-                </div>
-            </section>
-
-
-        </article>
-        <nav class="nav">
-            <h2>講師orメンター</h2>
+    <aside>
+        <h1>メンバー紹介</h1>
+        <section>
+            <h1>メンター・講師</h1>
             <ul>
                 <li>中山</li>
                 <li>杉本</li>
                 <li>越智</li>
                 <li>王</li>
             </ul>
-            <h2>インターン生徒</h2>
+        </section>
+
+        <section>
+            <h1>インターン生徒</h1>
             <ul>
                 <li>A</li>
                 <li>B</li>
@@ -99,9 +85,10 @@
                 <li>F</li>
                 <li>G</li>
             </ul>
-        </nav>
-    </div>
-    <div class="clearfix"></div>
+        </section>
+
+    </aside>
+
 
     <footer>
         <span>&copy;shun sugimoto</span>
