@@ -15,39 +15,6 @@ body {
     height: 90%;
 }
 
-header {
-    background-color: rgba(0, 0, 0, 0.3);
-    margin: 0;
-    border-bottom: 1px solid #000;
-    display: flex;
-}
-
-header a {
-    text-decoration: none;
-    color: white;
-}
-
-.header_left_item {
-    margin-right: auto;
-    font-size: 1.5rem;
-}
-
-.header_right_item {
-    margin: 5px;
-    padding-right: 5px;
-    border-right: 1px solid #fff;
-    display: table;
-}
-
-.header_right_item a {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.header_right_item__last {
-    border-right: none;
-}
-
 h1 {
     margin: 0;
     color: #000;
@@ -116,12 +83,4 @@ h1 {
 
 .profile_panel_filter:hover {
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-footer {
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-top: 1px solid #000;
-    height: 50px;
-    text-align: center;
 }
