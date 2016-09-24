@@ -6,3 +6,8 @@
 .main_color--only_color {
     color: white;
 }
+
+.accent_color {
+    color: bisque;
+    background-color: rgba(0, 0, 0, 0.5);
+}
