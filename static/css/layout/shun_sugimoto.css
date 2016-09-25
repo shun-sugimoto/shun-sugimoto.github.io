@@ -1,0 +1,103 @@
+/*セレクタでタグを指定するには、{タグ名}
+背景画像を設定している。
+
+*/
+
+body {
+    background-image: url("../../iamges/morning_glow.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+セレクタでid指定は、#{id名}
+横幅を800pxに固定。
+ブロック要素をmargin:10px autoで上下10pxの隙間を開け、左右を中央寄せ。
+borderで、#444の枠線をつけています。
+padding:30pxでborderの内側に隙間をつくる
+
+*/
+
+#main {
+    background-color: white;
+    width: 800px;
+    margin: 10px auto;
+    border: 1px solid #444;
+    padding: 30px;
+}
+
+
+/*
+インライン要素の中央寄せ。
+padding:0pxは、デフォルトで適用されているCSSを無効にしている
+*/
+
+#member_name {
+    text-align: center;
+    margin: 0px;
+}
+
+#image_container {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*
+画像を丸くする
+borderを丸枠にする
+*/
+
+img {
+    border-radius: 50%;
+}
+
+#profile_outline {
+    text-align: center;
+    border: 3px double darkgoldenrod;
+    border-radius: 50px;
+}
+
+
+/*classを指定するには、.{class名}
+topicごとにmarginで隙間をあける。
+*/
+
+.topic {
+    margin: 30px 30px 50px 30px;
+}
+
+.topic_title {
+    border-left: 3px solid darkgoldenrod;
+    border-bottom: 3px solid darkgoldenrod;
+    padding-left: 10px;
+}
+
+
+/*
+テーブルに枠線をつける
+複数指定も,をつければできる。
+また、別のところでCSSセレクタを記載し同時に適用させることもできる。
+*/
+
+table,
+th,
+td {
+    border: 1px #444 solid;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    width: 30%;
+    background-color: azure;
+}
