@@ -86,6 +86,13 @@
                         <td class="text_position_center">Highlight Multibyte Symbols</td>
                     </tr>
                 </table>
+                <p>上記のプラグインは、以下のページから抽出したものです。</p>
+                <p>興味のある方は他のプラグインの導入もおすすめします。</p>
+                <ul>
+                    <li>
+                        <a href="http://qiita.com/koh-taka@github/items/3c646d701dfad7b6b0bd">Bracketsのプラグイン</a>
+                    </li>
+                </ul>
             </section>
 
             <section>
@@ -99,12 +106,13 @@
 
         </section>
         <section>
-            <h1>HTMLをコーディングしてみよう(ガイドライン)</h1>
+            <h1>自己紹介ページを作ってみよう(HTML編)</h1>
             <section>
                 <h1>
                    概要
                </h1>
                 <p>この演習では、実際にHTMLを書きながらHTMLの勉強をしていきます。</p>
+                <p>ついでに、Gitでソースを落とす。コミットする。プッシュするという簡単な操作もやってみます。</p>
                 <p>本演習で行うことは基礎の基礎ですが、疑問に思ったことはどんどん聞いてください。</p>
                 <p>(わからないことがあったら、slackで聞いてもよいです)</p>
             </section>
@@ -121,29 +129,85 @@
                 <p>目標は、本HTMLを参考に各自自己紹介ページを作成することです。</p>
             </section>
 
+
+            <section>
+                <h1>2. Gitの操作をしてみよう</h1>
+                <p>以下のことを実行し、自分の変更をGithubのリポジトリに反映してみよう</p>
+                <ul>
+                    <li>feature/{名前}というブランチをつくる</li>
+                    <li>profilesフォルダの配下に、{名前}.htmlというフォルダを作る</li>
+                    <li>コミットをしてみる</li>
+                    <li>プッシュをしてみる</li>
+                    <li>プルリクエストを出してみる</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>3. セマンティック・ウェブについて学ぼう</h1>
+                <p>セマンティックWebとは、Webページおよびその中に記述された内容について、
+                    <br/>それが何を意味するかを表す情報（メタデータ）を一定の規則に従って付加することで、
+                    <br/>コンピュータが効率よく情報を収集・解釈できるようにする構想のことです。
+                </p>
+                <p>ようは、見た目ではなく、機械が解釈するためのタグがあるということです。</p>
+                <p>以下のようなタグがあります。</p>
+                <ul>
+                    <li>header</li>
+                    <li>section</li>
+                    <li>nav</li>
+                    <li>aside</li>
+                    <li>footer</li>
+                </ul>
+                <p>これらのコンテンツを正確に用いることで、SEOで有利なサイトを作ることができます。</p>
+                <p>各タグの使い方・セマンティックウェブの詳しい概念については、以下のリンクを参照してください。</p>
+                <ul>
+                    <li><a href="http://ad-library.jp/html5-outline/">HTML5でのアウトラインの書き方について考えてみた。</a>
+                    </li>
+                    <li>
+                        <a href="http://www.brain-solution.net/blog/seo/structured-data/">構造化データとは？～HTMLを構造化する前に知っておきたいこと～</a>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h1>4. 自己紹介ページを作成しよう</h1>
+                <p>サンプルを参考に、以下のタグを記載し自己紹介ページを作成しよう</p>
+                <ol>
+                    <li>header,section,footerをタグを記載しよう
+                        <br/>header,footerについては、サイト共通のコンテンツのため、コピペでお願いします。</li>
+                    <li>section毎に&lt;h1&gt;タグで見出しをつけよう。</li>
+                    <li>&lt;img&gt;タグで画像を表示し、プロフィール画像を添付しよう。
+                        <br>プロフィール画像は、statuc/images/profileの配下に置くこと!</li>
+                    <li>&lt;p&gt;タグで段落を表現し、プロフィールの一言を書いてみよう</li>
+                    <li>&lt;table&gt;タグで表を表現し、外見を記載してみよう。</li>
+                    <li>&lt;ol&gt;タグで番号つきのリストを表現し、好きなこと・趣味を記載しよう</li>
+                    <li>&lt;ul&gt;タグで番号なしのリストを表現し、嫌いなことを記載しよう</li>
+                    <li>&lt;a&gt;タグでリンクをつけ、外部リンクを紐付けよう。</li>
+                    <li>&lt;link&gt;タグでcssをインポートし、headerとfooterにcssを適用しよう</li>
+                </ol>
+            </section>
+
+            <section>
+                <h1>5. 変更をGitリポジトリに反映させよう</h1>
+                <p>手順は前述したとおりです。</p>
+                <p>そのあと、プルリクエストを出してみてください。</p>
+            </section>
         </section>
+
         <section>
-            <h1>html5</h1>
+            <h1>form要素について</h1>
+            <p>詳しくはJavaScriptの課題でやります。</p>
+            <p>理由としては、今回はサーバ側の実装を行わないため、フォームを使う場合には、JavaScriptで用いることが主だと思われるからです。</p>
+        </section>
 
-
-
+        <section>
+            <h1>困ったときのリファレンス</h1>
             <ul>
-                <li><a href="http://ad-library.jp/html5-outline/">HTML5でのアウトラインの書き方について考えてみた。</a>
-                </li>
                 <li>
-                    <a href="http://www.brain-solution.net/blog/seo/structured-data/">構造化データとは？～HTMLを構造化する前に知っておきたいこと～</a>
-                </li>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML">HTML | MDN - Mozilla Developer Network</a></li>
+                <li></li>
             </ul>
         </section>
-        <section>
-            <h1>Bracketsの使い方</h1>
-            <ul>
-                <li>
-                    <a href="http://qiita.com/koh-taka@github/items/3c646d701dfad7b6b0bd">Bracketsのプラグイン</a>
-                </li>
-            </ul>
-        </section>
-
 
         <section>
             <h1>CSS</h1>
@@ -169,8 +233,6 @@
             <h1>画像の解像度</h1>
             <ul>
                 <li><a href="https://ecpack.jp/web-create/lp-size/">必見！LP(ランディングページ)制作前に知っておきたい最適な横幅のサイズは？<br /></a> 結論としては、横幅950px　～ 1000px程度が良い模様。
-
-
                 </li>
             </ul>
         </section>
