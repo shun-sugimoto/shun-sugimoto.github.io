@@ -4,59 +4,180 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>2016年夏インターンhtml実習</title>
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/layout/lesson_common.css">
 </head>
 
 <body>
-    <section>
-        <h2>html5</h2>
-        <ul>
-            <li><a href="http://ad-library.jp/html5-outline/">HTML5でのアウトラインの書き方について考えてみた。</a>
-            </li>
-            <li>
-                <a href="http://www.brain-solution.net/blog/seo/structured-data/">構造化データとは？～HTMLを構造化する前に知っておきたいこと～</a>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>Bracketsの使い方</h2>
-        <ul>
-            <li>
-                <a href="http://qiita.com/koh-taka@github/items/3c646d701dfad7b6b0bd">Bracketsのプラグイン</a>
-            </li>
-        </ul>
-    </section>
+    <header>
+        <div class="header_left_item"><a href="../index.html">ここからはじまる!夏インターン</a></div>
+        <div class="header_right_item"><a href="../profiles/index.html">メンバー紹介</a></div>
+        <div class="header_right_item"><a href="./lesson_html.html">HTML</a></div>
+        <div class="header_right_item"><a href="">CSS</a></div>
+        <div class="header_right_item header_right_item__last"><a href="">Googlemap</a></div>
+    </header>
+
+    <div class="main">
+        <h1>HTMLについて学ぼう</h1>
+        <section>
+            <h1>開発環境を整えよう</h1>
+
+            <section>
+                <h1>1. Bracketsのインストール</h1>
+                <p><a href="http://brackets.io/">ここ</a>からインストールしてください。</p>
+                <p>基本的な使い方は、以下のリンクを参照してください</p>
+                <ul>
+                    <li><a href="http://nelog.jp/brackets">無料エディター「Brackets」にも恋に落ちた</a></li>
+                    <li>
+                        <a href="http://qiita.com/assialiholic/items/c8137321c7599a168b16">Bracketsの機能紹介、使い方解説</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>2. Bracketsのプラグインをインストール</h1>
+                <p>コーディングを楽にするために、プラグインを入れましょう。</p>
+                <p>右上の「フォルダマーク」をクリックするとプラグインを検索できます</p>
+                <p>最低限、以下のプラグインは入れましょう。</p>
+                <table>
+                    <tr class="table_header">
+                        <th><span>プラグイン</span></th>
+                        <th>概要</th>
+                    </tr>
+                    <tr>
+                        <td class="text_position_center">Emmets</td>
+                        <td>
+                            <p>HTMLとCSSのコーディング補助ツールです。</p>
+                            <p>主にタグの記載がすごく楽になります。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text_position_center">Beautify</td>
+                        <td>
+                            <p>コードを整形してくれます。</p>
+                            <p>「編集」 > 「保存時にBeatifulyをする」をチェックしてください。
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text_position_center">Brackets File Icons</td>
+                        <td>
+                            <p>ファイルアイコンがつきます。
+                            </p>
+                            <p>
+                                見やすい。
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text_position_center">Custom Work</td>
+                        <td>
+                            <p>タブ切り替えができるようになります。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text_position_center">HTML Block Selector</td>
+                        <td rowspan="2">
+                            <p>スペース・タブを可視化します。</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="text_position_center">Highlight Multibyte Symbols</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h1>3. SourceTreeをインストールしよう</h1>
+                <p>チーム開発をするためには、タスクの管理・コードの管理が重要になります。</p>
+                <p>コード管理をするために、すでにGithubのアカウントは取得していると思います。</p>
+                <p>Gitのインストールをするついでに、<a href="https://ja.atlassian.com/software/sourcetree">ここ</a>でSourceTreeをインストールしましょう。</p>
+                <p>チーム開発をする上でのGitの使い方は、後ほど別の時間帯で行います。</p>
+                <p>初期設定は、<a href="http://qiita.com/redamoon/items/5928ecab7e36f23b81ee">ここ</a>を読めばできるはずです。</p>
+            </section>
+
+        </section>
+        <section>
+            <h1>HTMLをコーディングしてみよう(ガイドライン)</h1>
+            <section>
+                <h1>
+                   概要
+               </h1>
+                <p>この演習では、実際にHTMLを書きながらHTMLの勉強をしていきます。</p>
+                <p>本演習で行うことは基礎の基礎ですが、疑問に思ったことはどんどん聞いてください。</p>
+                <p>(わからないことがあったら、slackで聞いてもよいです)</p>
+            </section>
+
+            <section>
+                <h1>1. サンプルを取得しよう</h1>
+                <p>僭越ながら、以下のurlでサンプルを作成しました。</p>
+                <ul>
+                    <li>
+                        <a href="https://github.com/shun-sugimoto/shun-sugimoto.github.io/blob/master/profiles/shun_sugimoto.html">profiles/shun_sugimoto.html</a>
+                    </li>
+                </ul>
+                <p>各自、SourceTreeでソースコードを落としてみてください。</p>
+                <p>目標は、本HTMLを参考に各自自己紹介ページを作成することです。</p>
+            </section>
+
+        </section>
+        <section>
+            <h1>html5</h1>
 
 
-    <section>
-        <h2>CSS</h2>
-        <ul>
-            <li><a href="https://zxcvbnmnbvcxz.com/css-center-img-text/">CSS 画像やテキスト要素を縦横中央配置する6つの方法 – How to Center Elements Horizontally and Vertically.</a>
-            </li>
-            <li><a href="http://d.hatena.ne.jp/n-yuji/20130225/p1">CSSのfont-family指定はこれで決まり！（2013春）</a></li>
-        </ul>
-    </section>
 
-    <section>
-        <h2>Googlemap</h2>
-        <ul>
-            <li><a href="https://syncer.jp/google-maps-javascript-api-matome">Google Maps JavaScript API v3の使い方まとめ (サンプルコード付き)</a>
-            </li>
-            <li><a href="https://developers.google.com/maps/documentation/javascript/?hl=ja">公式サイト</a></li>
-            <li><a href="https://developers.google.com/maps/documentation/javascript/tutorial?hl=ja">公式リファレンス</a></li>
-            <li><a href="http://qiita.com/akippiko/items/a4c539934fa4df2fd5b5">google mapが表示されない</a></li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>画像の解像度</h2>
-        <ul>
-            <li><a href="https://ecpack.jp/web-create/lp-size/">必見！LP(ランディングページ)制作前に知っておきたい最適な横幅のサイズは？<br /></a> 結論としては、横幅950px　～ 1000px程度が良い模様。
+            <ul>
+                <li><a href="http://ad-library.jp/html5-outline/">HTML5でのアウトラインの書き方について考えてみた。</a>
+                </li>
+                <li>
+                    <a href="http://www.brain-solution.net/blog/seo/structured-data/">構造化データとは？～HTMLを構造化する前に知っておきたいこと～</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h1>Bracketsの使い方</h1>
+            <ul>
+                <li>
+                    <a href="http://qiita.com/koh-taka@github/items/3c646d701dfad7b6b0bd">Bracketsのプラグイン</a>
+                </li>
+            </ul>
+        </section>
 
 
-            </li>
-        </ul>
-    </section>
+        <section>
+            <h1>CSS</h1>
+            <ul>
+                <li><a href="https://zxcvbnmnbvcxz.com/css-center-img-text/">CSS 画像やテキスト要素を縦横中央配置する6つの方法 – How to Center Elements Horizontally and Vertically.</a>
+                </li>
+                <li><a href="http://d.hatena.ne.jp/n-yuji/20130225/p1">CSSのfont-family指定はこれで決まり！（2013春）</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Googlemap</h1>
+            <ul>
+                <li><a href="https://syncer.jp/google-maps-javascript-api-matome">Google Maps JavaScript API v3の使い方まとめ (サンプルコード付き)</a>
+                </li>
+                <li><a href="https://developers.google.com/maps/documentation/javascript/?hl=ja">公式サイト</a></li>
+                <li><a href="https://developers.google.com/maps/documentation/javascript/tutorial?hl=ja">公式リファレンス</a></li>
+                <li><a href="http://qiita.com/akippiko/items/a4c539934fa4df2fd5b5">google mapが表示されない</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>画像の解像度</h1>
+            <ul>
+                <li><a href="https://ecpack.jp/web-create/lp-size/">必見！LP(ランディングページ)制作前に知っておきたい最適な横幅のサイズは？<br /></a> 結論としては、横幅950px　～ 1000px程度が良い模様。
+
+
+                </li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <span>&copy;shun sugimoto</span>
+    </footer>
 </body>
 
 </html>
