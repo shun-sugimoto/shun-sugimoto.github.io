@@ -4,7 +4,6 @@
 */
 
 body {
-    background-image: url("../../iamges/morning_glow.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +23,7 @@ padding:30pxでborderの内側に隙間をつくる
 */
 
 #main {
-    background-color: white;
+    background-color: whitesmoke;
     width: 800px;
     margin: 10px auto;
     border: 1px solid #444;
