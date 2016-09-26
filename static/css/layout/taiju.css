@@ -1,0 +1,38 @@
+#main {
+    background-color: aliceblue;
+    margin: 10px auto;
+    border: 1px solid #444;
+    padding: 30px;
+}
+
+#name {
+    text-align: center;
+    margin: 0px;
+}
+
+#image {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+img {
+     border-radius: 50%;
+}
+
+#profile_outline {
+    text-align: center;
+    border: 3px double skyblue;
+    border-radius: 50px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.content {
+   text-align: center;
+    border: 3px double skyblue;
+    border-radius: 50px;
+}
+
