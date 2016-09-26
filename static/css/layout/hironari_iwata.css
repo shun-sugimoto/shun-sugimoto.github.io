@@ -1,0 +1,55 @@
+/*セレクタでタグを指定するには、{タグ名}
+背景画像を設定している。
+
+*/
+
+body {
+    background-image: url("../../iamges/onntake.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 800px;
+    margin: 10px auto;
+    padding: 30px;
+    border: #FFCC66
+}
+
+#member_name {
+    text-align: center;
+    margin: 0px;
+}
+
+#image_container {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#profile_outline {
+    background-color: #FFCC66;
+    text-align: center;
+    border: 3px double #FFCC66;
+    border-radius: 50px;
+}
+
+.topic {
+    margin: 30px 30px 50px 30px;
+}
+
+.topic_title {
+    text-align: center;
+    border-left: 3px solid #FFCC66;
+    border-bottom: 3px solid #FFCC66;
+    padding-left: 10px;
+}
+
+table {
+    width: 100%;
+}
