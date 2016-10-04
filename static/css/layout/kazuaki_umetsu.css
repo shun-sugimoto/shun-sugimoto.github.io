@@ -1,0 +1,59 @@
+body {
+    background-color: floralwhite;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    background-color: lemonchiffon;
+    width: 800px;
+    margin: auto;
+    border: 1px solid #444;
+    
+}
+
+#member_name{
+    text-align: center;
+}
+
+#profile_outline{
+    border: 3px double darkgoldenrod;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#image_container {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px #444 solid;
+    border-collapse: collapse;
+    margin: auto
+}
+
+th{
+    width: 30%;
+    background-color: orangered;
+}
+
+td{
+    width: 30%;
+    background-color: white;
+}
+
+.topic_title {
+    border: 3px double red;
+    background-color: red;
+    border-radius: 50px;
+    margin: auto;
+    color: white
+}
+
+.topic{
+    padding: 10px;
+}
